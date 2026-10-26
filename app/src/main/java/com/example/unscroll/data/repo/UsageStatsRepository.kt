@@ -72,7 +72,7 @@ class UsageStatsRepository(
             .sortedByDescending { it.totalTimeInForeground }
     }
 
-    private fun getAppName(packageName: String): String {
+    fun getAppName(packageName: String): String {
         return try {
             val appInfo = context.packageManager
                 .getApplicationInfo(packageName, 0)
