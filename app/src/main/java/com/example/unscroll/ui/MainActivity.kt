@@ -1,4 +1,4 @@
-package com.example.unscroll
+package com.example.unscroll.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import com.example.unscroll.ui.theme.UnscrollTheme
 import com.example.unscroll.ui.theme.unscrollStatusColors
 import com.example.unscroll.ui.theme.utils.LightDarkPreview
+import com.example.unscroll.ui.usage.UsageScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,10 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             UnscrollTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    UsageScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }

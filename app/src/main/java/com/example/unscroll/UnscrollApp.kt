@@ -1,7 +1,7 @@
 package com.example.unscroll
 
 import android.app.Application
-import com.example.unscroll.di.appModule
+import com.example.unscroll.ui.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
 
